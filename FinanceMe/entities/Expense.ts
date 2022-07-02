@@ -1,4 +1,5 @@
 import genUniqueId from "../utils/getUniqueId";
+import truncate from "../utils/truncate";
 
 class Expense {
   private label: string;
@@ -26,9 +27,8 @@ class Expense {
   getLabel(): string {
     return this.label;
   }
-  // void is used in methods when there isn't the necessity to return a value
   updateLabel(label: string): void {
-    this.label = label;
+    this.label = truncate(label, 20);
   }
   getAmount(): number {
     return this.amount;
