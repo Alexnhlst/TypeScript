@@ -4,6 +4,7 @@
 
 - [Chapter 1: Getting started](/../../tree/chapter-1/CHAPTER1.MD)
 - [Chapter 2: Classes](/../../tree/chapter-2/CHAPTER2.MD)
+- [Chapter 3: TypeScript Language Features](/../../tree/chapter-3/CHAPTER3.MD)
 
 _Other skills i'm learning and improving in the meanwhile_
 
