@@ -9,5 +9,5 @@
 - [x] [Truncate utility function](./FinanceMe/utils/truncate.ts)
 - [x] [Category enums](./FinanceMe/enums/Category.ts)
 - [x] [Budget class](./FinanceMe/entities/Budget.ts)
-- [ ] [Type aliases](./FinanceMe/types/Month.ts)
-- [ ] [TrackedMonth class](./FinanceMe/entities/TrackedMonth.ts)
+- [x] [Type aliases](./FinanceMe/types/Month.ts)
+- [x] [TrackedMonth class](./FinanceMe/entities/TrackedMonth.ts)
