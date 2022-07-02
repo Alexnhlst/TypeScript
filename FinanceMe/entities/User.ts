@@ -24,32 +24,39 @@ mike = new User(1, 2);
 // mike = new User("Michael", 32);
 // mike.printUserInfo();
 
+import TrackedMonth from "./TrackedMonth";
+import genUniqueId from "../utils/getUniqueId";
+import Month from "../types/Month";
+
 class User {
   // Private class properties
   private name: string;
-  private age: number;
-  constructor(name: string, age: number) {
-    this.name = name;
-    this.age = age;
+  private id: string;
+  private trackedMonths: TrackedMonth[];
+  constructor(name: string, trackedMonths: TrackedMonth[]) {
+    this.updateName(name);
+    this.trackedMonths = trackedMonths;
+    this.id = genUniqueId();
   }
   // Getters - methods to retrieve properties
-  // Setters - not yet implemented, methods to update properties
-  getName() {
+  getId(): string {
+    return this.id;
+  }
+  getName(): string {
     return this.name;
   }
-  getAge() {
-    return this.age;
+  updateName(name: string) {
+    this.name = name;
   }
-  printUserInfo() {
-    console.log(`name: ${this.name}, age: ${this.age}`);
+  getTrackedMonths(): TrackedMonth[] {
+    return this.trackedMonths;
+  }
+  getTrackedMonthByDate(month: Month, year: number): TrackedMonth {
+    return this.getTrackedMonths().find(
+      (trackedMonth) =>
+        trackedMonth.getMonth() === month && trackedMonth.getYear() === year
+    );
   }
 }
 
-const katie = new User("Katherine", 35);
-/* error: these properties are private
-katie.name;
-katie.getAge;
-*/
-
-console.log(katie.getName());
-console.log(katie.getAge());
+export default User;
