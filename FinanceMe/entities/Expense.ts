@@ -1,7 +1,10 @@
+import genUniqueId from "../utils/getUniqueId";
+
 class Expense {
   private label: string;
   private amount: number;
   private date: Date;
+  private id: string;
   constructor(
     label: string,
     amount: number,
@@ -13,8 +16,13 @@ class Expense {
     this.updateLabel(label);
     this.updateAmount(amount);
     this.updateDate(date);
+    // the id is generated with the util function
+    this.id = genUniqueId();
   }
   // Getters and setters
+  getId(): string {
+    return this.id;
+  }
   getLabel(): string {
     return this.label;
   }

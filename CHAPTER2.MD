@@ -6,3 +6,4 @@
 - [x] [User class with private properties](./FinanceMe/entities/User.ts)
 - [x] [Expense class](./FinanceMe/entities/Expense.ts)
 - [x] [Generating unique ID utility](./FinanceMe/utils/getUniqueId.ts)
+- [x] [Truncate utility function](./FinanceMe/utils/truncate.ts)
