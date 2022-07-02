@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        // target specifies the version of ECMAScript that the compiler will output 
+        "target": "ES6",
+        // module specifies the module system used to generated the code. commonjs ensures that the code can run in Node.js 
+        "module": "commonjs",
+        // typeRoots specifies the directory where TypeScript should search for global types
+        // the default behavior is to inherit types from parent directories
+        "typeRoots": ["./node_modules/@types"],
+        // esModuleInterop ensures that there is compatibility between commonjs and es modules
+        "esModuleInterop": true,
+        // forceConsistentCasingInFileNames ensures that no bugs are introduces by accidentally import a module using incorrect casing
+        "forceConsistentCasingInFileNames": true
+    }
+}
