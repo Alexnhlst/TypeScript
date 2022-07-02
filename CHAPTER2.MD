@@ -11,3 +11,4 @@
 - [x] [Budget class](./FinanceMe/entities/Budget.ts)
 - [x] [Type aliases](./FinanceMe/types/Month.ts)
 - [x] [TrackedMonth class](./FinanceMe/entities/TrackedMonth.ts)
+- [x] [Completed app](./FinanceMe/app.ts)

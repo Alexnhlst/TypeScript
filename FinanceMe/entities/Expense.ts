@@ -1,4 +1,4 @@
-import genUniqueId from "../utils/getUniqueId";
+import genUniqueId from "../utils/genUniqueId";
 import truncate from "../utils/truncate";
 
 class Expense {

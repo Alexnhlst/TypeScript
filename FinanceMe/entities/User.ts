@@ -25,7 +25,7 @@ mike = new User(1, 2);
 // mike.printUserInfo();
 
 import TrackedMonth from "./TrackedMonth";
-import genUniqueId from "../utils/getUniqueId";
+import genUniqueId from "../utils/genUniqueId";
 import Month from "../types/Month";
 
 class User {
