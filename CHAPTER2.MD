@@ -7,3 +7,5 @@
 - [x] [Expense class](./FinanceMe/entities/Expense.ts)
 - [x] [Generating unique ID utility](./FinanceMe/utils/getUniqueId.ts)
 - [x] [Truncate utility function](./FinanceMe/utils/truncate.ts)
+- [ ] [Category enums]()
+- [ ] [Budget class]()
