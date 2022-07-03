@@ -98,3 +98,37 @@ const [first, ...other] = yellow;
 const [red2, blue2, green2, alpha = 1] = yellow;
 // the same observations are valid for object destructuring
 // instead of using square bracketscurly braces are used
+
+// it's common for objects to contain nested objects and arrays
+// destructuring allows to extract properties that are nested in objects
+const laptops = [
+  {
+    year: 2018,
+    os: "OSX",
+    sellerZipCodes: ["10010", "07302"],
+  },
+  {
+    year: 2015,
+    os: "Ubuntu",
+    sellerZipCodes: ["07030"],
+  },
+];
+
+const [
+  {
+    sellerZipCodes: [, secondZipCode],
+  },
+] = laptops;
+
+// the spread operator facilitates copying the elements of one or more arrays into a new array
+// copying the properties of one or more objects into a new object
+// spreading an array when calling a function
+// when spreading an array, all of the elements in the array will be copied into the new array
+const firstArr = [1, 2];
+const secondArr = [3, 4];
+const thirdArr = [...firstArr, ...secondArr, 5, 6];
+// the iterator protocol is a way for objects to specify iteration behavior for cases like spreading and for..of loops
+// Array, String, Map, and Set (the constructors for the corresponding JS values) all implement the iterator protocol
+const arrFromStr = [..."Types"]; // ['T', 'y', 'p', 'e', 's']
+const arrFromMap = [...new Map(["a", true])]; // [['a', true]]
+const arrFromSet = [...new Set([1, 2, 3])]; // [1,2,3]
