@@ -69,3 +69,15 @@ function prefix(pre: string, word: string | string[]): string | string[] {
   if (typeof word === "string") return `${pre}${word}`;
   return word.map((w) => `${pre}${w}`);
 }
+
+// functions are first class citizens in JS, meaning they are able to be passed around and modified just like any other value
+// when using functions as inputs for other functions, anonymous functions are used
+type NumFn = (delay: number) => void;
+
+function delay(fn: NumFn, delay: number) {
+  setTimeout(fn, delay, delay);
+}
+
+function printDelay(delay: number) {
+  console.log(`delay: ${delay}`);
+}
