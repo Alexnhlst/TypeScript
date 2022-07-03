@@ -63,3 +63,12 @@ const android = {
 iPhone = android;
 // object literals undergo what is known as excess property checking
 // it ensures that only properties defined in the object type are present
+
+// properties in the objects are not alwats required
+// to mark properties as oprional, the ? character is used
+type Student = {
+  id: string;
+  name: string;
+  age?: number;
+  isEnrolled?: boolean;
+};
