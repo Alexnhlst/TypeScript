@@ -56,4 +56,12 @@ const logMember = (memberDiscriminant: SchoolMemberDiscriminant) => {
   // these will genereate an error
   // console.log(memberDiscriminant.major)
   // console.log(memberDiscriminant.classes)
+  // type guards are conditional checks that can use the discriminants at runtime to determine
+  // the type of a union in a given scope
+  if (memberDiscriminant.role === "student") {
+    console.log(memberDiscriminant.major);
+  }
+  if (memberDiscriminant.role === "professor") {
+    console.log(memberDiscriminant.classes);
+  }
 };
