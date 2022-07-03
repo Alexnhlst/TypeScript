@@ -81,3 +81,32 @@ function delay(fn: NumFn, delay: number) {
 function printDelay(delay: number) {
   console.log(`delay: ${delay}`);
 }
+
+// Anonymous functions have classically had two drawbacks
+// they can be clunky for small procedures, such as mapping or filtering
+// they force to think about the value of this within the function
+// arrow functions have a shorter syntax and a this value that equals the this of the enclosing context
+const accounts = [
+  {
+    name: "Christine",
+    isLoggedIn: false,
+  },
+  {
+    name: "Cory",
+    isLoggedIn: true,
+  },
+  {
+    name: "Matt",
+    isLoggedIn: true,
+  },
+];
+
+const mapName = (account) => account.name; // Implicit return
+const filterAccount = (account) => {
+  return !account.isLoggedIn; // Explicit return
+};
+// Arrow function as a value
+type NumToStr = (num: number) => string;
+const numToStr: NumToStr = (num) => String(num);
+// Inline arrow function
+const numToStr2 = (num: string): number => String(num);
