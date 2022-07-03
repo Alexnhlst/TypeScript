@@ -6,8 +6,9 @@
 - [Chapter 2: Classes](/../../tree/chapter-2/CHAPTER2.MD)
 - [Chapter 3: TypeScript Language Features](/../../tree/chapter-3/CHAPTER3.MD)
 - [Chapter 4: Objects](/../../tree/chapter-4/CHAPTER4.MD)
-- [Chapter 4: Typing Functions - The Basics](/../../tree/chapter-5/CHAPTER5.MD)
-- [Chapter 5: TypeScript Modules and Compiling](/../../tree/chapter-6/CHAPTER6.MD)
+- [Chapter 5: Typing Functions - The Basics](/../../tree/chapter-5/CHAPTER5.MD)
+- [Chapter 6: TypeScript Modules and Compiling](/../../tree/chapter-6/CHAPTER6.MD)
+- [Chapter 7: ES2015 and TypeScript](/../../tree/chapter-7/CHAPTER7.MD)
 
 _Other skills i'm learning and improving in the meanwhile_
 
