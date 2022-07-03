@@ -42,3 +42,30 @@ const sum = (...nums: number[]): number => {
   // the returned sum becomes the prev in the nex iteration
   return nums.reduce(add, startingValue);
 };
+
+// Overloading allows to define multiple functions signatures for one function
+// it's like as pattern matcching based on the input types that a function is called with
+/*const prefix = (pre: string, word: string | string[]): string | string[] => {
+  if (typeof word === "string") {
+    return `${pre}${word}`;
+  }
+  return word.map((w) => `${pre}${w}`);
+};*/
+// an error is risen when the return value is used as either a string or an array
+/*const book = prefix("fullstack ", "TypeScript");
+book.substring(10);
+const books = prefix("fullstack ", ["TypeScript", "React"]);
+books.push("fullstack Vue");*/
+// union return types are not dynamic
+// to fix this problem, overloads are created to specify dynamic return types based on the input
+// the order of overloads is important
+// the matching runs from top to bottom, the most specific overloads must be placed first
+// overload 1: if word is type string, return a string
+function prefix(pre: string, word: string): string;
+// overload 2: if word is type string[], return a string[]
+function prefix(pre: string, word: string[]): string[];
+// function implementation
+function prefix(pre: string, word: string | string[]): string | string[] {
+  if (typeof word === "string") return `${pre}${word}`;
+  return word.map((w) => `${pre}${w}`);
+}
