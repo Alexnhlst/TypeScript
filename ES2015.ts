@@ -80,3 +80,21 @@ const refactoredPick = (obj, property) => {
     [property]: obj[property],
   };
 };
+
+// destructuring gives a concise syntax for extracting data and saving it to variables
+const yellow = [255, 255, 0];
+// prior to es2015, index were used to get the value of an element
+/* const red = yellow[0];
+const blue = yellow[1];
+const green = yellow[2];*/
+//with destructuring, the elements are specified based on their position
+const [red, green, blue] = yellow;
+// to only extract the third item, commas can be used to skip the first ones
+const [, , third] = yellow;
+// to save the first variable in an array and thge rest to a new one, the rest operator can be used
+const [first, ...other] = yellow;
+// if a destructured element doesn't exist, the destructured variable will be undefined
+// a default value can be assigned
+const [red2, blue2, green2, alpha = 1] = yellow;
+// the same observations are valid for object destructuring
+// instead of using square bracketscurly braces are used
