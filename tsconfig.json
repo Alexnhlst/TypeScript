@@ -1,0 +1,5 @@
+// to compile a TS module into valid JS, a module system is used by the environment
+// a CommonJS is used to run the compiled code in Node.js
+// other options are: ES2015 Modules, SystemJS, AMD, UMD
+// to specify the output module, the module compiler option is set
+{"compilerOptions": {"module": "commonjs"}}
