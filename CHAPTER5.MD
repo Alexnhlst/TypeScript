@@ -7,3 +7,4 @@
 - [x] [Rest parameters](https://github.com/Alexnhlst/TypeScript/blob/706369ac9aa657ad4e44cb960065af64d8b30733/functions.ts#L35-L44)
 - [x] [Overloading](https://github.com/Alexnhlst/TypeScript/blob/17b01c8cdd540d0ce69205b90e6ed20806042503/functions.ts#L46-L71)
 - [x] [Function as values](https://github.com/Alexnhlst/TypeScript/blob/f0986af84b65b1a55a8f921122e7525e4f0c3028//functions.ts#L73-L83)
+- [x] [Arrow functions](https://github.com/Alexnhlst/TypeScript/blob/4d09b129f9dd5a31fb1d7765f3825482aa39ece3/functions.ts#L85-L112)

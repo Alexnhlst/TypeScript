@@ -109,4 +109,4 @@ const filterAccount = (account) => {
 type NumToStr = (num: number) => string;
 const numToStr: NumToStr = (num) => String(num);
 // Inline arrow function
-const numToStr2 = (num: string): number => String(num);
+const numToStr2 = (num: number): string => String(num);
