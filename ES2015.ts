@@ -30,3 +30,53 @@ const weather = {
 };
 weather.temperature = 80;
 weather.windSpeed = 20;
+
+// when creating object literals, the name of the keys often matches the names of variables in outer scope
+const zipCode = "07030";
+const street = "River";
+const houseNumber = "234";
+// the object literal can be refactored using shorthand syntax for property names
+// const address = {
+//   zipCode: zipCode,
+//   street: street,
+//   houseNumber: houseNumber,
+// };/
+const address = {
+  zipCode,
+  street,
+  houseNumber,
+};
+// when adding a method to an object literal it is possible to define the function in the outer scope and add it as a property
+// or define it using an anonymous function
+// the object literal can be refactored using shorthand syntax for method names
+// const calculator = {
+//   add: function (num1, num2) {
+//     return num1 + num2;
+//   },
+//   multiply: function (num1, num2) {
+//     return num1 * num2;
+//   },
+// };
+const calculator = {
+  add(num1, num2) {
+    return num1 + num2;
+  },
+  multiply(num1, num2) {
+    return num1 * num2;
+  },
+};
+// prior to es2015, the syntax for adding dynamic property names to object required two steps
+// one for object literal initialization and another for the actual property setting
+function pick(obj, property) {
+  // step 1: object initialization
+  const phone = {};
+  // step 2: property setting
+  phone[property] = obj[property];
+  return phone;
+}
+// the function can be refactored using computed property names
+const refactoredPick = (obj, property) => {
+  return {
+    [property]: obj[property],
+  };
+};
