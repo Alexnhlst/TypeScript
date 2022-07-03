@@ -31,3 +31,14 @@ const getTip = (
   const calculatedTip = (percentage / 100) * bill;
   return Math.max(calculatedTip, minimum);
 };
+
+// rest parameters allow to defune an indeterminate number of function parameters
+// this is useful for functions that have unbounded input
+const sum = (...nums: number[]): number => {
+  const startingValue = 0;
+  const add = (prev: number, curr: number) => prev + curr;
+  // Array.reduce() iterates over each value, adding the current value to the previous one
+  // returning the result of the sum at each iteration
+  // the returned sum becomes the prev in the nex iteration
+  return nums.reduce(add, startingValue);
+};
