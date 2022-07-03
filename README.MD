@@ -9,6 +9,7 @@
 - [Chapter 5: Typing Functions - The Basics](/../../tree/chapter-5/CHAPTER5.MD)
 - [Chapter 6: TypeScript Modules and Compiling](/../../tree/chapter-6/CHAPTER6.MD)
 - [Chapter 7: ES2015 and TypeScript](/../../tree/chapter-7/CHAPTER7.MD)
+- [Chapter 7: Object Oriented TypeScript](/../../tree/chapter-8/CHAPTER8.MD)
 
 _Other skills i'm learning and improving in the meanwhile_
 
