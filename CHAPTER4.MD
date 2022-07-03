@@ -3,4 +3,4 @@
 ### Chapter 4 milestones
 
 - [x] [Objects](./object.ts)
-- [x] [Typing object properties](https://github.com/Alexnhlst/TypeScript/blob/aac40a4ca382a3269e9e9d4de13589fe9df7c437/object.ts#L27-L65)
+- [x] [Typing object properties](https://github.com/Alexnhlst/TypeScript/blob/b86ec289d6f4069d1de273e74f7e17e5a906ec04/object.ts#L27-L65)
