@@ -28,3 +28,32 @@ member = {
   major: "Computer Science",
   classes: ["algorithms", "data structures"],
 };
+
+// discriminated unions, also referred to as tagged unions or disjoint unions, allow to discriminate the types that comprise a union
+// a discriminant (or tag) must be added to both types and will serve as a differentiator for that type
+type StudentDiscriminant = {
+  role: "student";
+  name: string;
+  age: number;
+  major: string;
+};
+type ProfessorDiscriminant = {
+  role: "professor";
+  name: string;
+  age: number;
+  classes: string[];
+};
+type SchoolMemberDiscriminant = StudentDiscriminant | ProfessorDiscriminant;
+
+// as soon as a function that consumes a SchoolMember is created, TypeScript does not allow to access
+// unique properties of Student or Professor
+let memberDiscriminant: SchoolMemberDiscriminant;
+
+const logMember = (memberDiscriminant: SchoolMemberDiscriminant) => {
+  console.log(memberDiscriminant.role);
+  console.log(memberDiscriminant.name);
+  console.log(memberDiscriminant.age);
+  // these will genereate an error
+  // console.log(memberDiscriminant.major)
+  // console.log(memberDiscriminant.classes)
+};
