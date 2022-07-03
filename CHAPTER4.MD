@@ -8,3 +8,4 @@
 - [x] [Union types](unionTypes.ts) 
 - [x] [Discriminated unions](https://github.com/Alexnhlst/TypeScript/blob/2321ed8b230b4036de1e6fe0420fbbb5e268c0bb/unionTypes.ts#L32-L59)
 - [x] [Type guards](https://github.com/Alexnhlst/TypeScript/blob/d52529cde715e146d2b3a6a9fb6545256ecbc6dd/unionTypes.ts#L59-L67)
+- [x] [Intersection types](intersectionTypes.ts)
